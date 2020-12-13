@@ -3,7 +3,6 @@
     "description": "Openpay Widgets",
     "type": "magento2-module",
     "require": {
-        "ideatarmac/openpay": "^1.0.0",
         "opy/module-payment": "^1.0.0"
     },
     "authors": [
@@ -13,10 +12,8 @@
           "homepage": "https://www.openpay.com.au"
         }
     ],
-    "license": [
-      "OSL-3.0",
-      "AFL-3.0"
-    ],
+    "license": "proprietary",
+    "minimum-stability": "stable",
     "autoload": {
       "files": [
           "registration.php"
