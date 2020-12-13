@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+	<type name="Magento\Catalog\Block\Product\ListProduct">
+        <plugin name="openpay_widget_list" type="Openpay\Widgets\Plugin\Block\Product\ListProduct" sortOrder="1" disabled="false"/>
+    </type>
+    <type name="Aopen\Openpay\Model\Openpay">
+        <plugin name="openpay_payment_openpay" type="Openpay\Widgets\Plugin\Payment\Openpay" sortOrder="10" disabled="false"  />
+    </type>
+</config>

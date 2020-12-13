@@ -1,0 +1,29 @@
+{
+    "name": "opy/widgets",
+    "description": "Openpay Widgets",
+    "type": "magento2-module",
+    "version": "1.1.0",
+    "require": {
+        "ideatarmac/openpay": "^1.0.0",
+        "opy/module-payment": "^1.0.0"
+    },
+    "authors": [
+        {
+          "name": "Openpay",
+          "email": "info@openpay.com.au",
+          "homepage": "https://www.openpay.com.au"
+        }
+    ],
+    "license": [
+      "OSL-3.0",
+      "AFL-3.0"
+    ],
+    "autoload": {
+      "files": [
+          "registration.php"
+      ],
+      "psr-4": {
+          "Openpay\\Widgets\\": ""
+      }
+    }
+}

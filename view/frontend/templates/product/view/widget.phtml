@@ -1,0 +1,8 @@
+<?php $helper = $this->helper('Openpay\Widgets\Helper\Data'); ?>
+<?php if($helper->isEnabled()): ?>
+	<?php if($helper->isProductWidgetEnabled()): ?>
+		<?php $_product = $block->getProduct() ?>
+		
+		<div class="oppyproductdetail"><opy-product-page amount="<?= $_product->getFinalPrice() ?>" logo="<?= $helper->getProductLogo() ?>" product-type="<?= $_product->getTypeId() ?>" data-mage-init='{ "products": {} }'></opy-product-page></div>
+	<?php endif; ?>
+<?php endif; ?>

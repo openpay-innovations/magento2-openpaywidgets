@@ -1,0 +1,8 @@
+<?php $helper = $this->helper('Openpay\Widgets\Helper\Data'); ?>
+<?php if($helper->isEnabled()): ?>
+	<?php if($helper->isCartWidgetEnabled()): ?>
+		<?php $grandTotal = $block->getQuote()->getGrandTotal() ?>
+		
+		<div class="opycart"><opy-cart amount="<?= $grandTotal ?>" logo="<?= $helper->getCartLogo() ?>"></opy-cart></div>
+	<?php endif; ?>
+<?php endif; ?>

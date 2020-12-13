@@ -1,0 +1,23 @@
+<?php $helper = $this->helper('Openpay\Widgets\Helper\Data'); ?>
+<?php if($helper->isEnabled()): 
+
+	$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+	$request = $objectManager->get('Magento\Framework\App\Action\Context')->getRequest();
+
+	?>
+
+
+
+	<?php if(($helper->getHeaderWidgetInfobelt() == 'homepage') && ($request->getFullActionName() == 'cms_index_index')){ ?>
+
+		<div id="openpayinfobelt"><opy-info-belt color="<?= $helper->getHeaderWidgetColor() ?>"></opy-info-belt></div><div id="openpaybottom"></div>
+
+	<?php } elseif($helper->getHeaderWidgetInfobelt() == 'acrossthesite'){ ?>
+
+		<div id="openpayinfobelt"><opy-info-belt color="<?= $helper->getHeaderWidgetColor() ?>"></opy-info-belt></div><div id="openpaybottom"></div>
+
+	<?php } elseif($helper->getHeaderWidgetInfobelt() == 'off'){ ?>
+
+
+<?php } ?>
+<?php endif; ?>

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <widgets>
+            <general>
+                <enable>0</enable>
+            </general>
+            <header>
+                <enable>0</enable>
+            </header>
+            <product>
+                <enable>0</enable>
+            </product>
+            <catalog>
+                <enable>0</enable>
+            </catalog>
+            <cart>
+                <enable>0</enable>
+            </cart>
+            <checkout>
+                <enable>0</enable>
+                <instalment>Pay in interest free fortnightly instalments.</instalment>
+                <redirect>You will be redirected to Openpay's website to complete your order when you click "Proceed to Openpay".</redirect>
+            </checkout>
+        </widgets>
+    </default>
+</config>
