@@ -71,16 +71,16 @@ Using server SSH Access, please go to project root folder and run the following 
 
 Or, you can do it manually from the admin by following the path: `System` > `Tools` > `Cache Management` and then clicking on the `Flush Magento Cache` button.
 
+#### Important note
+
+Please make sure you have already installed the Openpay payment plugin to make the widgets work as expected.
+
 Admin Setup
 ---------
 
 In the backend, expand `Openpay  Widgets -> General Configuration -> Enable Widgets -> Yes -> Save Config`
 
 To set up `Openpay Widgets`, fill out the fields as per your Openpay account configuration. (This information will be provided by your Openpay Ecommerce Manager or Account Manager).
-
-#### Important note:
-
-Please make sure you have already installed the Openpay payment plugin to make the widgets work as expected.
 
 
 ###### Command to run the Payment Plugin:
