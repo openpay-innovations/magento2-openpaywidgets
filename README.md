@@ -74,8 +74,6 @@ Or, you can do it manually from the admin by following the path: `System` > `Too
 Admin Setup
 ---------
 
-Check the status of the module by running this command: php bin/magento module:status.
-
 In the backend, expand `Openpay  Widgets -> General Configuration -> Enable Widgets -> Yes -> Save Config`
 
 To set up `Openpay Widgets`, fill out the fields as per your Openpay account configuration. (This information will be provided by your Openpay Ecommerce Manager or Account Manager).
