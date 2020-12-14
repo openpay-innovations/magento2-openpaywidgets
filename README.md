@@ -44,7 +44,6 @@ Requirements
 
 [Magento 2.4 system requirements](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html)
 
-For further info on Magento 2 System Requirements. Please read [here](https://www.simicart.com/blog/magento-2-system-requirements).
 
 Installation
 ---------
