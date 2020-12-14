@@ -74,7 +74,7 @@ Or, you can do it manually from the admin by following the path: `System` > `Too
 Admin Setup
 ---------
 
-Check the status of the module by running this command: php bin/magento module:status. If the Openpay_productWidget appears on the `List of enabled modules`, then the module is running properly.
+Check the status of the module by running this command: php bin/magento module:status.
 
 In the backend, expand `Openpay  Widgets -> General Configuration -> Enable Widgets -> Yes -> Save Config`
 
@@ -85,7 +85,7 @@ To set up `Openpay Widgets`, fill out the fields as per your Openpay account con
 Please make sure you have already installed the Openpay payment plugin to make the widgets work as expected.
 
 
-##### Command to run the Payment Plugin:
+###### Command to run the Payment Plugin:
 
 ```sh
 composer require opy/module-payment
