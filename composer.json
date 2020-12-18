@@ -3,7 +3,7 @@
     "description": "Openpay Widgets",
     "type": "magento2-module",
     "require": {
-        "opy/module-payment": "^1.0.0"
+        "opy/module-payment": "*"
     },
     "authors": [
         {
@@ -13,7 +13,6 @@
         }
     ],
     "license": "proprietary",
-    "minimum-stability": "stable",
     "autoload": {
       "files": [
           "registration.php"
