@@ -19,12 +19,10 @@ class Openpay
 		$this->_state = $state;
 	}
 
-	public function afterGetTitle(\Aopen\Openpay\Model\Openpay $subject, $result){
-		
+	public function afterGetTitle(\Openpay\Payment\Model\Openpay $subject, $result){
 		if ($this->helper->isCheckoutWidgetEnabled() && $this->_state->getAreaCode()!== 'adminhtml') {
-			$result .= '<span class="learn-more"><opy-learn-more-button></opy-learn-more-button></span>';
+			$result .= ' <img src="https://static.openpay.com.au/brand/logo/amber-lozenge-logo.svg" width="75px" class="payment-icon"/> <span class="learn-more"><opy-learn-more-button></opy-learn-more-button></span> ';
 		}
-
 		return $result;
 	}
 	
