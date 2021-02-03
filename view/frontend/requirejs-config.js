@@ -1,6 +1,6 @@
 var config = {
     "paths":{
-        'openpay': 'https://widgets.staging.openpay.com.au/lib/openpay-widgets.min'
+        'openpay': 'https://widgets.openpay.com.au/lib/openpay-widgets.min'
     },
     map: {
         '*': {
