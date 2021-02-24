@@ -41,7 +41,7 @@
     border: solid 1px #f6f6f6;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
-    border-radius: 10 px;
+    border-radius: 10px;
     z-index: 1;
     overflow: hidden;
     text-align: center;
@@ -93,3 +93,5 @@ opy-learn-more-button {
 }
 
 }
+
+.opy-chk-logo{ width: 75px !important;}
