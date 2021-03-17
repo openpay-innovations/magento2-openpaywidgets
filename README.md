@@ -89,8 +89,3 @@ composer require opy/module-payment
 ``` 
 
 Check with Openpay / Ecommerce Manager for your Plan Tiers configuration.
-
-
-License
----------
-This code is a closed-source software and released under the proprietary License by [Openpay (Pty) Ltd](https://www.openpay.com.au/).
