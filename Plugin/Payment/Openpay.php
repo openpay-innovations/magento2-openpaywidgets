@@ -23,7 +23,7 @@ class Openpay {
     }
 
     public function afterGetTitle(\Openpay\Payment\Model\Openpay $subject, $result) {
-        if ($this->helper->isCheckoutWidgetEnabled() && $this->_state->getAreaCode() !== 'adminhtml' && ($this->request->getFullActionName() !== 'checkout_onepage_success')) {
+        if ($this->helper->isCheckoutWidgetEnabled() && $this->_state->getAreaCode() !== 'adminhtml' && ($this->request->getFullActionName() !== 'checkout_onepage_success') && ($this->request->getActionName() !== 'reside')) {
             $result .= ' <img src="https://static.openpay.com.au/brand/logo/amber-lozenge-logo.svg" width="75px" class="payment-icon opy-chk-logo"/> <span class="learn-more"><opy-learn-more-button></opy-learn-more-button></span> ';
         }
         return $result;
