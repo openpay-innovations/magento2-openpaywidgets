@@ -19,6 +19,9 @@ class Data extends AbstractHelper
 
     const XML_PATH_PRODUCT_ENABLED = 'widgets/product/enable';
     const XML_PATH_LOGO_PRODUCT = 'widgets/product/productlogo';
+    const XML_PATH_PRODUCT_LOGOPOSITION = 'widgets/product/logopos';
+    const XML_PATH_PRODUCT_LEARNMORE_TEXT = 'widgets/product/learnmoretext';
+    const XML_PATH_PRODUCT_INFOICON = 'widgets/product/infoicon';
 
     const XML_PATH_CATALOG_ENABLED = 'widgets/catalog/enable';
     const XML_PATH_CATALOG_LOGO = 'widgets/catalog/logo';
@@ -26,6 +29,8 @@ class Data extends AbstractHelper
 
     const XML_PATH_CART_ENABLED = 'widgets/cart/enable';
     const XML_PATH_LOGO_CART = 'widgets/cart/cartlogo';
+    const XML_PATH_CART_LEARNMORE_TEXT = 'widgets/cart/learnmoretext';
+    const XML_PATH_CART_INFOICON = 'widgets/cart/infoicon';
 
     const XML_PATH_CHECKOUT_ENABLED = 'widgets/checkout/enable';
     const XML_PATH_INSTALMENT_TEXT = 'widgets/checkout/instalment';
@@ -33,6 +38,8 @@ class Data extends AbstractHelper
 
     const XML_PATH_LANDING_PAGE = 'widgets/landing/page';
     const XML_PATH_CUSTOM_CSS = 'widgets/openpaycustomcss/addcustomcss';
+
+    
 
     protected $scopeConfig;
 
@@ -165,6 +172,36 @@ class Data extends AbstractHelper
         return false;
     }
 
+    public function getLogoPosition()
+    {
+        if ($this->isEnabled()) {
+            $storeScope = \Magento\Store\Model\ScopeInterface::SCOPE_STORE;
+            return $this->scopeConfig->getValue(self::XML_PATH_PRODUCT_LOGOPOSITION, $storeScope);
+        }
+        
+        return false;
+    }
+
+    public function getLearnMoreText()
+    {
+        if ($this->isEnabled()) {
+            $storeScope = \Magento\Store\Model\ScopeInterface::SCOPE_STORE;
+            return $this->scopeConfig->getValue(self::XML_PATH_PRODUCT_LEARNMORE_TEXT, $storeScope);
+        }
+        
+        return false;
+    }
+
+    public function getInfoIcon()
+    {
+        if ($this->isEnabled()) {
+            $storeScope = \Magento\Store\Model\ScopeInterface::SCOPE_STORE;
+            return $this->scopeConfig->getValue(self::XML_PATH_PRODUCT_INFOICON, $storeScope);
+        }
+        
+        return false;
+    }
+
 
     public function isCatalogWidgetEnabled()
     {
@@ -212,6 +249,26 @@ class Data extends AbstractHelper
         if ($this->isEnabled()) {
             $storeScope = \Magento\Store\Model\ScopeInterface::SCOPE_STORE;
             return $this->scopeConfig->getValue(self::XML_PATH_LOGO_CART, $storeScope);
+        }
+        
+        return false;
+    }
+
+    public function getCartWidgetLearnMoreText()
+    {
+        if ($this->isEnabled()) {
+            $storeScope = \Magento\Store\Model\ScopeInterface::SCOPE_STORE;
+            return $this->scopeConfig->getValue(self::XML_PATH_CART_LEARNMORE_TEXT, $storeScope);
+        }
+        
+        return false;
+    }
+
+    public function getCartWidgetInfoIcon()
+    {
+        if ($this->isEnabled()) {
+            $storeScope = \Magento\Store\Model\ScopeInterface::SCOPE_STORE;
+            return $this->scopeConfig->getValue(self::XML_PATH_CART_INFOICON, $storeScope);
         }
         
         return false;
