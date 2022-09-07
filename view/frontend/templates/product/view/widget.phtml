@@ -3,6 +3,6 @@
 	<?php if($helper->isProductWidgetEnabled()): ?>
 		<?php $_product = $block->getProduct() ?>
 		
-		<div class="oppyproductdetail"><opy-product-page amount="<?= $_product->getFinalPrice() ?>" logo="<?= $helper->getProductLogo() ?>" product-type="<?= $_product->getTypeId() ?>" data-mage-init='{ "products": {} }'></opy-product-page></div>
+		<div class="oppyproductdetail"><opy-product-page amount="<?= $_product->getFinalPrice() ?>" logo="<?= $helper->getProductLogo() ?>" more-info-text="<?= $helper->getLearnMoreText() ?>" info-icon="<?= $helper->getInfoIcon() ?>" logo-position="<?= $helper->getLogoPosition() ?>" product-type="<?= $_product->getTypeId() ?>" data-mage-init='{ "products": {} }'></opy-product-page></div>
 	<?php endif; ?>
 <?php endif; ?>

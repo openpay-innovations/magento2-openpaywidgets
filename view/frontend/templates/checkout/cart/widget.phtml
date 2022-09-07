@@ -3,6 +3,6 @@
 	<?php if($helper->isCartWidgetEnabled()): ?>
 		<?php $grandTotal = $block->getQuote()->getGrandTotal() ?>
 		
-		<div class="opycart"><opy-cart amount="<?= $grandTotal ?>" logo="<?= $helper->getCartLogo() ?>"></opy-cart></div>
+		<div class="opycart"><opy-cart amount="<?= $grandTotal ?>" logo="<?= $helper->getCartLogo() ?>" more-info-text="<?= $helper->getCartWidgetLearnMoreText() ?>" info-icon="<?= $helper->getCartWidgetInfoIcon() ?>"></opy-cart></div>
 	<?php endif; ?>
 <?php endif; ?>
